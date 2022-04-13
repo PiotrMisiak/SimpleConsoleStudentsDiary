@@ -4,11 +4,13 @@ using System.Collections.Generic;
 namespace ChallengeApp
 {
     public delegate void PoorGradeAddedDelegate(object sender, EventArgs args);
+
     public delegate void GradeAddedDelegate(object sender, EventArgs args);
 
     public class StudentInMemory : StudentBase
     {      
         public  override event PoorGradeAddedDelegate PoorGradeAdded;
+
         public override event GradeAddedDelegate GradeAdded;       
 
         public List<double> grades = new List<double>();

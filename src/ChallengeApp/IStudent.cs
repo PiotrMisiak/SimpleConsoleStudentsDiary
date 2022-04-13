@@ -9,7 +9,9 @@ namespace ChallengeApp
         void AddGrade(string grade);           
         Statistics GetStatistics();
         string Name {get;}  
+
         event GradeAddedDelegate GradeAdded;
+
         event PoorGradeAddedDelegate PoorGradeAdded;
            
     }

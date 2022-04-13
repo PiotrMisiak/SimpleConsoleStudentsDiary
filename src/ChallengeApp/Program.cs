@@ -13,13 +13,14 @@ namespace ChallengeApp
             student.GradeAdded += OnGradeAdded;            
             AddStudentName(student);                                  
             ChangeStudentName(student);            
-            EnterGrade(student);
-                                    
+            EnterGrade(student);                                  
         }
+
         private static void OnPoorGradeAdded(object sender, EventArgs args)
         {
             Console.WriteLine("Oh no poor grade is added! We should inform student’s parents about this fact.\n(press 'q' if all grades are added)\n");
         }
+
         private static void OnGradeAdded(object sender, EventArgs args)
         {
             Console.WriteLine("New grade is added.\n(press 'q' if all grades are added)\n");
@@ -49,7 +50,7 @@ namespace ChallengeApp
             }                                               
         }
 
-          public static void ChangeStudentName(StudentInMemory student)
+        public static void ChangeStudentName(StudentInMemory student)
         {   
             Console.WriteLine(
             $"\nName of student is: {student.Name}. Do you want to change student name?\n(press 'y' if yes, or 'n' if no)");                           
@@ -91,7 +92,8 @@ namespace ChallengeApp
                 break;
                 } 
             }                             
-        }      
+        }  
+        
         private static void EnterGrade(StudentInMemory student)
         {
             Console.WriteLine(

@@ -8,7 +8,7 @@ namespace challenge.tests
     public class StudentTests
     {
        [Fact]
-       public void Test1()
+       public void GetStatisticsReturnsCorrectValues()
        {
            // arrange
              var stud = new StudentInMemory("student");

@@ -7,8 +7,11 @@ namespace ChallengeApp
     public class StudentSaved : StudentBase
     {    
         public override event GradeAddedDelegate GradeAdded;
-        public override event PoorGradeAddedDelegate PoorGradeAdded;  
+
+        public override event PoorGradeAddedDelegate PoorGradeAdded; 
+        
         public List<double> grades; 
+
         const string fileName = "Grades.txt";
         
         public StudentSaved(string name) : base(name)
